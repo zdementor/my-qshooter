@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="myengine_credits" >
+        <Property Name="Text" Value="io;p " />
+        <Property Name="InheritsAlpha" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="QShooterLook/FrameWindow" Name="CreditsMainFrame" >
+            <Property Name="Font" Value="Cour-14" />
+            <Property Name="Text" Value="Credits" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="TitlebarFont" Value="Cour-16" />
+            <Property Name="SizingEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TitlebarEnabled" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.302464,0},{0.162006,0},{0.671214,0},{0.785949,0}}" />
+            <Property Name="MouseCursorImage" Value="set:QShooterLook image:MouseTarget" />
+            <Window Type="QShooterLook/Button" Name="CreditsOKButton" >
+                <Property Name="Font" Value="Cour-16" />
+                <Property Name="Text" Value="OK" />
+                <Property Name="InheritsAlpha" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HoverTextColour" Value="FFC26408" />
+                <Property Name="UnifiedAreaRect" Value="{{0.370809,0},{0.804155,0},{0.64527,0},{0.916349,0}}" />
+                <Property Name="MouseCursorImage" Value="set:QShooterLook image:MouseArrow" />
+                <Property Name="PushedTextColour" Value="FFF5C059" />
+            </Window>
+            <Window Type="QShooterLook/StaticText" Name="CreditsInfo" >
+                <Property Name="Font" Value="Tahoma-12" />
+                <Property Name="Text" Value=" " />
+                <Property Name="InheritsAlpha" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.104144,0},{0.12388,0},{0.892271,0},{0.76797,0}}" />
+                <Window Type="QShooterLook/StaticText" Name="CreditsInfo14" >
+                    <Property Name="Font" Value="Cour-12" />
+                    <Property Name="Text" Value="Zhuk Dimitri" />
+                    <Property Name="FrameEnabled" Value="False" />
+                    <Property Name="HorzFormatting" Value="HorzCentred" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.0796587,0},{0.250374,0},{0.944097,0},{0.334993,0}}" />
+                    <Property Name="BackgroundEnabled" Value="False" />
+                </Window>
+                <Window Type="QShooterLook/StaticText" Name="CreditsInfo147" >
+                    <Property Name="Font" Value="Cour-12" />
+                    <Property Name="Text" >was taken 
+from Quake2 game
+by ID Software</Property>
+                    <Property Name="FrameEnabled" Value="False" />
+                    <Property Name="HorzFormatting" Value="HorzCentred" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.0670576,0},{0.588094,0},{0.931496,0},{0.919778,0}}" />
+                    <Property Name="BackgroundEnabled" Value="False" />
+                </Window>
+                <Window Type="QShooterLook/StaticText" Name="CreditsInfo48" >
+                    <Property Name="Font" Value="Cour-14" />
+                    <Property Name="Text" Value="Art" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="TextColours" Value="tl:FFFFFFA0 tr:FFFFFFA0 bl:FFFFFFA0 br:FFFFFFA0" />
+                    <Property Name="FrameEnabled" Value="False" />
+                    <Property Name="HorzFormatting" Value="HorzCentred" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.0553725,0},{0.46411,0},{0.919811,0},{0.594862,0}}" />
+                    <Property Name="BackgroundEnabled" Value="False" />
+                </Window>
+                <Window Type="QShooterLook/StaticText" Name="CreditsInfo4" >
+                    <Property Name="Font" Value="Cour-14" />
+                    <Property Name="Text" Value="Programming/Design" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="TextColours" Value="tl:FFFFFFA0 tr:FFFFFFA0 bl:FFFFFFA0 br:FFFFFFA0" />
+                    <Property Name="FrameEnabled" Value="False" />
+                    <Property Name="HorzFormatting" Value="HorzCentred" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.0359436,0},{0.103467,0},{0.963526,0},{0.240145,0}}" />
+                    <Property Name="BackgroundEnabled" Value="False" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

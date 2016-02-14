@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="myengine_options" >
+        <Property Name="InheritsAlpha" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="QShooterLook/FrameWindow" Name="OptionsMainFrame" >
+            <Property Name="Font" Value="Cour-16" />
+            <Property Name="Text" Value="Options" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="TitlebarFont" Value="Cour-16" />
+            <Property Name="SizingEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TitlebarEnabled" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.269339,0},{0.0999217,0},{0.726838,0},{0.873868,0}}" />
+            <Property Name="MouseCursorImage" Value="set:QShooterLook image:MouseTarget" />
+            <Window Type="QShooterLook/Button" Name="OptionsOKButton" >
+                <Property Name="Font" Value="Cour-16" />
+                <Property Name="Text" Value="OK" />
+                <Property Name="InheritsAlpha" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HoverTextColour" Value="FFC26408" />
+                <Property Name="UnifiedAreaRect" Value="{{0.343474,0},{0.849407,0},{0.653938,0},{0.943517,0}}" />
+                <Property Name="MouseCursorImage" Value="set:QShooterLook image:MouseArrow" />
+                <Property Name="PushedTextColour" Value="FFF5C059" />
+            </Window>
+            <Window Type="QShooterLook/TabControl" Name="OptionsTabControl" >
+                <Property Name="Font" Value="Cour-12" />
+                <Property Name="TabHeight" Value="{0,40}" />
+                <Property Name="TabTextPadding" Value="{0,10}" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="TabPanePosition" Value="Top" />
+                <Property Name="UnifiedAreaRect" Value="{{0.076675,0},{0.0901342,0},{0.930226,0},{0.835438,0}}" />
+                <Window Type="DefaultWindow" Name="VideoTab" >
+                    <Property Name="Font" Value="Cour-12" />
+                    <Property Name="Text" Value="Video / Audio" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    <Window Type="QShooterLook/HorizontalScrollbar" Name="BrightScroll" >
+                        <Property Name="Text" Value="Monitor brightness value" />
+                        <Property Name="Tooltip" Value="Monitor brightness change" />
+                        <Property Name="PageSize" Value="0.0625" />
+                        <Property Name="StepSize" Value="0.00392" />
+                        <Property Name="OverlapSize" Value="0.00392" />
+                        <Property Name="DocumentSize" Value="1" />
+                        <Property Name="ScrollPosition" Value="0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.111286,0},{0.260261,0},{0.835422,0},{0.314333,0}}" />
+                    </Window>
+                    <Window Type="QShooterLook/StaticText" Name="BrightnessCapt" >
+                        <Property Name="Font" Value="Cour-14" />
+                        <Property Name="Text" Value="Brightness:" />
+                        <Property Name="TextColours" Value="tl:FFFFFFA0 tr:FFFFFFA0 bl:FFFFFFA0 br:FFFFFFA0" />
+                        <Property Name="FrameEnabled" Value="False" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.0748365,0},{0.040356,0},{0.697369,0},{0.132433,0}}" />
+                        <Property Name="BackgroundEnabled" Value="False" />
+                    </Window>
+                    <Window Type="QShooterLook/StaticText" Name="BrightZeroCapt" >
+                        <Property Name="Font" Value="Cour-12" />
+                        <Property Name="Text" Value="0" />
+                        <Property Name="FrameEnabled" Value="False" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.0372281,0},{0.232414,0},{0.105253,0},{0.332414,0}}" />
+                        <Property Name="BackgroundEnabled" Value="False" />
+                    </Window>
+                    <Window Type="QShooterLook/StaticText" Name="BrightMaxCapt" >
+                        <Property Name="Font" Value="Cour-12" />
+                        <Property Name="Text" Value="255" />
+                        <Property Name="FrameEnabled" Value="False" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.855898,0},{0.232414,0},{0.974551,0},{0.332414,0}}" />
+                        <Property Name="BackgroundEnabled" Value="False" />
+                    </Window>
+                    <Window Type="QShooterLook/Spinner" Name="BrightSpinner" >
+                        <Property Name="Font" Value="Cour-12" />
+                        <Property Name="Text" Value="0" />
+                        <Property Name="Tooltip" Value="Monitor brightness change" />
+                        <Property Name="StepSize" Value="5" />
+                        <Property Name="CurrentValue" Value="0" />
+                        <Property Name="MaximumValue" Value="255" />
+                        <Property Name="MinimumValue" Value="0" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.398032,0},{0.149036,0},{0.627875,0},{0.250973,0}}" />
+                    </Window>
+                    <Window Type="QShooterLook/StaticText" Name="VolumeCapt" >
+                        <Property Name="Font" Value="Cour-14" />
+                        <Property Name="Text" Value="Volume:" />
+                        <Property Name="TextColours" Value="tl:FFFFFFA0 tr:FFFFFFA0 bl:FFFFFFA0 br:FFFFFFA0" />
+                        <Property Name="FrameEnabled" Value="False" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.0748365,0},{0.33211,0},{0.590785,0},{0.428344,0}}" />
+                        <Property Name="BackgroundEnabled" Value="False" />
+                    </Window>
+                    <Window Type="QShooterLook/StaticText" Name="VideoTab/" >
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.0885843,0},{0.434846,0},{0.903482,0},{0.957678,0}}" />
+                        <Window Type="QShooterLook/StaticText" Name="MusicVolCapt" >
+                            <Property Name="Font" Value="Cour-12" />
+                            <Property Name="Text" Value="100%" />
+                            <Property Name="FrameEnabled" Value="False" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="UnifiedAreaRect" Value="{{0.257035,0},{0.462929,0},{0.47367,0},{0.661928,0}}" />
+                            <Property Name="BackgroundEnabled" Value="False" />
+                        </Window>
+                        <Window Type="QShooterLook/Slider" Name="MusicVolumeSlider" >
+                            <Property Name="Font" Value="Bgothm-18" />
+                            <Property Name="Tooltip" Value="Musice volume change" />
+                            <Property Name="CurrentValue" Value="0" />
+                            <Property Name="MaximumValue" Value="1" />
+                            <Property Name="ClickStepSize" Value="0.01" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="UnifiedAreaRect" Value="{{0.196662,0},{0.279015,0},{0.244522,0},{0.853726,0}}" />
+                        </Window>
+                        <Window Type="QShooterLook/Slider" Name="EffectsVolumeSlider" >
+                            <Property Name="Font" Value="Bgothm-18" />
+                            <Property Name="Tooltip" Value="Effects volume change" />
+                            <Property Name="CurrentValue" Value="0" />
+                            <Property Name="MaximumValue" Value="1" />
+                            <Property Name="ClickStepSize" Value="0.01" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="UnifiedAreaRect" Value="{{0.677715,0},{0.279015,0},{0.725575,0},{0.853726,0}}" />
+                        </Window>
+                        <Window Type="QShooterLook/StaticText" Name="EffectsVolCapt" >
+                            <Property Name="Font" Value="Cour-12" />
+                            <Property Name="Text" Value="100%" />
+                            <Property Name="FrameEnabled" Value="False" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="UnifiedAreaRect" Value="{{0.732417,0},{0.462929,0},{0.949052,0},{0.661928,0}}" />
+                            <Property Name="BackgroundEnabled" Value="False" />
+                        </Window>
+                        <Window Type="QShooterLook/StaticText" Name="MusicCapt" >
+                            <Property Name="Font" Value="Cour-12" />
+                            <Property Name="Text" Value="Music" />
+                            <Property Name="FrameEnabled" Value="False" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="UnifiedAreaRect" Value="{{0.071604,0},{0.07677,0},{0.356253,0},{0.236826,0}}" />
+                            <Property Name="BackgroundEnabled" Value="False" />
+                        </Window>
+                        <Window Type="QShooterLook/StaticText" Name="MusicCapt1" >
+                            <Property Name="Font" Value="Cour-12" />
+                            <Property Name="Text" Value="Effects" />
+                            <Property Name="FrameEnabled" Value="False" />
+                            <Property Name="HorzFormatting" Value="HorzCentred" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="UnifiedAreaRect" Value="{{0.519221,0},{0.07677,0},{0.898042,0},{0.236826,0}}" />
+                            <Property Name="BackgroundEnabled" Value="False" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Type="DefaultWindow" Name="ControlsTab" >
+                    <Property Name="Font" Value="Cour-14" />
+                    <Property Name="Text" Value="Controls" />
+                    <Property Name="Visible" Value="False" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    <Window Type="QShooterLook/TabControl" Name="ControlsTabControl" >
+                        <Property Name="Font" Value="Cour-12" />
+                        <Property Name="TabHeight" Value="{0,40}" />
+                        <Property Name="TabTextPadding" Value="{0,10}" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="TabPanePosition" Value="Top" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.0202083,0},{0.0153508,0},{0.976695,0},{0.97124,0}}" />
+                        <Window Type="DefaultWindow" Name="KeyMappingTab" >
+                            <Property Name="Font" Value="Cour-12" />
+                            <Property Name="Text" Value="Key / Mouse" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                            <Window Type="QShooterLook/StaticText" Name="MappingCapt" >
+                                <Property Name="Font" Value="Cour-12" />
+                                <Property Name="Text" Value="Controls mapping:" />
+                                <Property Name="TextColours" Value="tl:FFFFFFA0 tr:FFFFFFA0 bl:FFFFFFA0 br:FFFFFFA0" />
+                                <Property Name="FrameEnabled" Value="False" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="VertFormatting" Value="TopAligned" />
+                                <Property Name="UnifiedAreaRect" Value="{{0.0450912,0},{0.00604431,0},{0.657218,0},{0.0940162,0}}" />
+                                <Property Name="BackgroundEnabled" Value="False" />
+                            </Window>
+                            <Window Type="QShooterLook/MultiColumnList" Name="ActionMapList" >
+                                <Property Name="Font" Value="Cour-10" />
+                                <Property Name="Tooltip" Value="Click to change" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="UnifiedAreaRect" Value="{{0.0353036,0},{0.111576,0},{0.966662,0},{0.69281,0}}" />
+                            </Window>
+                            <Window Type="QShooterLook/StaticText" Name="SenseCapt" >
+                                <Property Name="Font" Value="Cour-12" />
+                                <Property Name="Text" >Mouse 
+sensitivity:</Property>
+                                <Property Name="TextColours" Value="tl:FFFFFFA0 tr:FFFFFFA0 bl:FFFFFFA0 br:FFFFFFA0" />
+                                <Property Name="FrameEnabled" Value="False" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="VertFormatting" Value="TopAligned" />
+                                <Property Name="UnifiedAreaRect" Value="{{0.0405786,0},{0.689239,0},{0.491138,0},{0.888492,0}}" />
+                                <Property Name="BackgroundEnabled" Value="False" />
+                            </Window>
+                            <Window Type="QShooterLook/HorizontalScrollbar" Name="SenseScroll" >
+                                <Property Name="Font" Value="Bgothm-18" />
+                                <Property Name="Tooltip" Value="Mouse sensitive change" />
+                                <Property Name="PageSize" Value="0.0625" />
+                                <Property Name="StepSize" Value="0.00392" />
+                                <Property Name="OverlapSize" Value="0.00392" />
+                                <Property Name="DocumentSize" Value="1" />
+                                <Property Name="ScrollPosition" Value="0" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="UnifiedAreaRect" Value="{{0.0901517,0},{0.887633,0},{0.823482,0},{0.958245,0}}" />
+                            </Window>
+                            <Window Type="QShooterLook/Spinner" Name="SenseSpinner" >
+                                <Property Name="Font" Value="Cour-12" />
+                                <Property Name="Text" Value="0" />
+                                <Property Name="Tooltip" Value="Mouse sensitive change" />
+                                <Property Name="StepSize" Value="5" />
+                                <Property Name="CurrentValue" Value="0" />
+                                <Property Name="MaximumValue" Value="255" />
+                                <Property Name="MinimumValue" Value="0" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="UnifiedAreaRect" Value="{{0.455278,0},{0.744494,0},{0.690937,0},{0.857252,0}}" />
+                            </Window>
+                            <Window Type="QShooterLook/StaticText" Name="SenseMaxCapt" >
+                                <Property Name="Font" Value="Cour-12" />
+                                <Property Name="Text" Value="255" />
+                                <Property Name="FrameEnabled" Value="False" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="UnifiedAreaRect" Value="{{0.846441,0},{0.877872,0},{0.964267,0},{0.977872,0}}" />
+                                <Property Name="BackgroundEnabled" Value="False" />
+                            </Window>
+                            <Window Type="QShooterLook/StaticText" Name="SenseZeroCapt" >
+                                <Property Name="Font" Value="Cour-12" />
+                                <Property Name="Text" Value="0" />
+                                <Property Name="FrameEnabled" Value="False" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="UnifiedAreaRect" Value="{{0.0290485,0},{0.877872,0},{0.119507,0},{0.977872,0}}" />
+                                <Property Name="BackgroundEnabled" Value="False" />
+                            </Window>
+                        </Window>
+                        <Window Type="DefaultWindow" Name="CameraTab" >
+                            <Property Name="Text" Value="Camera" />
+                            <Property Name="Visible" Value="False" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="UnifiedAreaRect" Value="{{0.005252,0},{0,0},{1,0},{1,0}}" />
+                            <Window Type="QShooterLook/StaticText" Name="CameraStyleRadioGroup" >
+                                <Property Name="Font" Value="Cour-12" />
+                                <Property Name="Text" Value=" " />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="UnifiedAreaRect" Value="{{0.0929792,0},{0.168283,0},{0.89245,0},{0.775922,0}}" />
+                                <Window Type="QShooterLook/RadioButton" Name="ASStyleRadio" >
+                                    <Property Name="Font" Value="Cour-12" />
+                                    <Property Name="Text" Value="Alien Shooter 3D" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="UnifiedAreaRect" Value="{{0.0829548,0},{0.36972,0},{0.954322,0},{0.633083,0}}" />
+                                </Window>
+                                <Window Type="QShooterLook/RadioButton" Name="SGStyleRadio" >
+                                    <Property Name="Font" Value="Cour-12" />
+                                    <Property Name="Text" Value="Shadow Ground" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="UnifiedAreaRect" Value="{{0.0829548,0},{0.105993,0},{0.954322,0},{0.369357,0}}" />
+                                </Window>
+                                <Window Type="QShooterLook/RadioButton" Name="CrimsonStyleRadio" >
+                                    <Property Name="Font" Value="Cour-12" />
+                                    <Property Name="Text" Value="Crimson Land" />
+                                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                    <Property Name="UnifiedAreaRect" Value="{{0.0829548,0},{0.620486,0},{0.954322,0},{0.88385,0}}" />
+                                </Window>
+                            </Window>
+                            <Window Type="QShooterLook/StaticText" Name="CameraStyleCapt" >
+                                <Property Name="Font" Value="Cour-12" />
+                                <Property Name="Text" Value="Camera style:" />
+                                <Property Name="TextColours" Value="tl:FFFFFFA0 tr:FFFFFFA0 bl:FFFFFFA0 br:FFFFFFA0" />
+                                <Property Name="FrameEnabled" Value="False" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="UnifiedAreaRect" Value="{{0.0609231,0},{0.0270544,0},{0.848378,0},{0.140645,0}}" />
+                                <Property Name="BackgroundEnabled" Value="False" />
+                            </Window>
+                            <Window Type="QShooterLook/StaticText" Name="CameraAutoZoomCapt" >
+                                <Property Name="Font" Value="Cour-12" />
+                                <Property Name="Text" Value="Auto zoom camera:" />
+                                <Property Name="TextColours" Value="tl:FFFFFFA0 tr:FFFFFFA0 bl:FFFFFFA0 br:FFFFFFA0" />
+                                <Property Name="FrameEnabled" Value="False" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="UnifiedAreaRect" Value="{{0.0609231,0},{0.831541,0},{0.6941,0},{0.94513,0}}" />
+                                <Property Name="BackgroundEnabled" Value="False" />
+                            </Window>
+                            <Window Type="QShooterLook/Checkbox" Name="AutoZoomCheck" >
+                                <Property Name="Font" Value="Cour-12" />
+                                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                                <Property Name="UnifiedAreaRect" Value="{{0.673938,0},{0.841299,0},{0.910052,0},{0.940214,0}}" />
+                            </Window>
+                        </Window>
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

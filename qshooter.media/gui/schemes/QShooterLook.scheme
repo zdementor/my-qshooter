@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<GUIScheme Name="QShooterLookSkin">
+	<Imageset Name="QShooterLook" Filename="QShooterLook.imageset" />
+
+    <Font Name="Commonwealth-10" Filename="Commonwealth-10.font" />
+    <Font Name="Tahoma-8" Filename="Tahoma-8.font" />
+    <Font Name="Tahoma-10" Filename="Tahoma-10.font" />
+    <Font Name="Tahoma-12" Filename="Tahoma-12.font" />
+    <Font Name="Tahoma-14" Filename="Tahoma-14.font" />
+    <Font Name="Tahoma-16" Filename="Tahoma-16.font" />
+    <Font Name="Bgothm-18" Filename="Bgothm-18.font" />
+	<Font Name="Cour-8" Filename="Cour-8.font" />
+	<Font Name="Cour-10" Filename="Cour-10.font" />
+	<Font Name="Cour-12" Filename="Cour-12.font" />
+	<Font Name="Cour-14" Filename="Cour-14.font" />
+	<Font Name="Cour-16" Filename="Cour-16.font" />	
+
+	<LookNFeel Filename="QShooterLook.looknfeel" />
+	<WindowRendererSet Filename="CEGUIFalagardWRBase" />
+	<FalagardMapping WindowType="QShooterLook/Button"      TargetType="CEGUI/PushButton"  Renderer="Falagard/Button"       LookNFeel="QShooterLook/Button" />
+	<FalagardMapping WindowType="QShooterLook/Checkbox"    TargetType="CEGUI/Checkbox"    Renderer="Falagard/ToggleButton" LookNFeel="QShooterLook/Checkbox" />
+	<FalagardMapping WindowType="QShooterLook/ImageButton" TargetType="CEGUI/PushButton"  Renderer="Falagard/Button"       LookNFeel="QShooterLook/ImageButton" />
+	<FalagardMapping WindowType="QShooterLook/RadioButton" TargetType="CEGUI/RadioButton" Renderer="Falagard/ToggleButton" LookNFeel="QShooterLook/RadioButton" />
+	<FalagardMapping WindowType="QShooterLook/FrameWindow"  TargetType="CEGUI/FrameWindow" Renderer="Falagard/FrameWindow"  LookNFeel="QShooterLook/FrameWindow" />
+	<FalagardMapping WindowType="QShooterLook/Titlebar"     TargetType="CEGUI/Titlebar"    Renderer="Falagard/Titlebar"     LookNFeel="QShooterLook/Titlebar" />
+	<FalagardMapping WindowType="QShooterLook/SystemButton" TargetType="CEGUI/PushButton"  Renderer="Falagard/SystemButton" LookNFeel="QShooterLook/Button" />
+	<FalagardMapping WindowType="QShooterLook/Editbox"          TargetType="CEGUI/Editbox"          Renderer="Falagard/Editbox"          LookNFeel="QShooterLook/Editbox" />
+	<FalagardMapping WindowType="QShooterLook/MultiLineEditbox" TargetType="CEGUI/MultiLineEditbox" Renderer="Falagard/MultiLineEditbox" LookNFeel="QShooterLook/MultiLineEditbox" />
+	<FalagardMapping WindowType="QShooterLook/Menubar"   TargetType="CEGUI/Menubar"   Renderer="Falagard/Menubar"   LookNFeel="QShooterLook/Menubar" />
+	<FalagardMapping WindowType="QShooterLook/PopupMenu" TargetType="CEGUI/PopupMenu" Renderer="Falagard/PopupMenu" LookNFeel="QShooterLook/PopupMenu" />
+	<FalagardMapping WindowType="QShooterLook/MenuItem"  TargetType="CEGUI/MenuItem"  Renderer="Falagard/MenuItem"  LookNFeel="QShooterLook/MenuItem" />
+	<FalagardMapping WindowType="QShooterLook/AlternateProgressBar" TargetType="CEGUI/ProgressBar" Renderer="Falagard/ProgressBar" LookNFeel="QShooterLook/AltProgressBar" />
+	<FalagardMapping WindowType="QShooterLook/ProgressBar"          TargetType="CEGUI/ProgressBar" Renderer="Falagard/ProgressBar" LookNFeel="QShooterLook/ProgressBar" />
+	<FalagardMapping WindowType="QShooterLook/VUMeter"              TargetType="CEGUI/ProgressBar" Renderer="Falagard/ProgressBar" LookNFeel="QShooterLook/VUMeter" />
+	<FalagardMapping WindowType="QShooterLook/VerticalScrollbar"   TargetType="CEGUI/Scrollbar" Renderer="Falagard/Scrollbar" LookNFeel="QShooterLook/VerticalScrollbar" />
+	<FalagardMapping WindowType="QShooterLook/HorizontalScrollbar" TargetType="CEGUI/Scrollbar" Renderer="Falagard/Scrollbar" LookNFeel="QShooterLook/HorizontalScrollbar" />
+	<FalagardMapping WindowType="QShooterLook/VerticalScrollbarThumb"   TargetType="CEGUI/Thumb" Renderer="Falagard/Button" LookNFeel="QShooterLook/VerticalScrollbarThumb" />
+	<FalagardMapping WindowType="QShooterLook/HorizontalScrollbarThumb" TargetType="CEGUI/Thumb" Renderer="Falagard/Button" LookNFeel="QShooterLook/HorizontalScrollbarThumb" />
+	<FalagardMapping WindowType="QShooterLook/LargeVerticalScrollbar"      TargetType="CEGUI/Scrollbar" Renderer="Falagard/Scrollbar" LookNFeel="QShooterLook/LargeVerticalScrollbar" />
+	<FalagardMapping WindowType="QShooterLook/LargeVerticalScrollbarThumb" TargetType="CEGUI/Thumb"     Renderer="Falagard/Button"    LookNFeel="QShooterLook/LargeVerticalScrollbarThumb" />
+	<FalagardMapping WindowType="QShooterLook/TabButton"  TargetType="CEGUI/TabButton"  Renderer="Falagard/TabButton"  LookNFeel="QShooterLook/TabButton" />
+	<FalagardMapping WindowType="QShooterLook/TabControl" TargetType="CEGUI/TabControl" Renderer="Falagard/TabControl" LookNFeel="QShooterLook/TabControl" />
+	<FalagardMapping WindowType="QShooterLook/TabContentPane"    TargetType="DefaultWindow"    Renderer="Falagard/Default"    LookNFeel="QShooterLook/TabContentPane" />
+	<FalagardMapping WindowType="QShooterLook/TabButtonPane"    TargetType="DefaultWindow"    Renderer="Falagard/Default"    LookNFeel="QShooterLook/TabButtonPane" />
+	<FalagardMapping WindowType="QShooterLook/ComboDropList" TargetType="CEGUI/ComboDropList" Renderer="Falagard/Listbox" LookNFeel="QShooterLook/ComboDropList" />
+	<FalagardMapping WindowType="QShooterLook/ComboEditbox"  TargetType="CEGUI/Editbox"	 Renderer="Falagard/Editbox" LookNFeel="QShooterLook/ComboEditbox" />
+	<FalagardMapping WindowType="QShooterLook/Combobox"	TargetType="CEGUI/Combobox"	 Renderer="Falagard/Default" LookNFeel="QShooterLook/Combobox" />
+	<FalagardMapping WindowType="QShooterLook/Listbox"           TargetType="CEGUI/Listbox"           Renderer="Falagard/Listbox"           LookNFeel="QShooterLook/Listbox" />
+	<FalagardMapping WindowType="QShooterLook/ListHeader"        TargetType="CEGUI/ListHeader"        Renderer="Falagard/ListHeader"        LookNFeel="QShooterLook/ListHeader" />
+	<FalagardMapping WindowType="QShooterLook/ListHeaderSegment" TargetType="CEGUI/ListHeaderSegment" Renderer="Falagard/ListHeaderSegment" LookNFeel="QShooterLook/ListHeaderSegment" />
+	<FalagardMapping WindowType="QShooterLook/MultiColumnList"   TargetType="CEGUI/MultiColumnList"   Renderer="Falagard/MultiColumnList"   LookNFeel="QShooterLook/MultiColumnList" />
+	<FalagardMapping WindowType="QShooterLook/Slider"      TargetType="CEGUI/Slider"      Renderer="Falagard/Slider"  LookNFeel="QShooterLook/Slider" />
+	<FalagardMapping WindowType="QShooterLook/SliderThumb" TargetType="CEGUI/Thumb" Renderer="Falagard/Button"  LookNFeel="QShooterLook/SliderThumb" />
+	<FalagardMapping WindowType="QShooterLook/ScrollablePane" TargetType="CEGUI/ScrollablePane" Renderer="Falagard/ScrollablePane" LookNFeel="QShooterLook/ScrollablePane" />
+	<FalagardMapping WindowType="QShooterLook/Spinner" TargetType="CEGUI/Spinner" Renderer="Falagard/Default" LookNFeel="QShooterLook/Spinner" />
+	<FalagardMapping WindowType="QShooterLook/Tooltip" TargetType="CEGUI/Tooltip" Renderer="Falagard/Tooltip" LookNFeel="QShooterLook/Tooltip" />
+	<FalagardMapping WindowType="QShooterLook/StaticImage" TargetType="DefaultWindow" Renderer="Falagard/StaticImage" LookNFeel="QShooterLook/StaticImage" />
+	<FalagardMapping WindowType="QShooterLook/StaticText"  TargetType="DefaultWindow" Renderer="Falagard/StaticText"  LookNFeel="QShooterLook/StaticText" />
+    <FalagardMapping WindowType="QShooterLook/ItemListbox" TargetType="CEGUI/ItemListbox" Renderer="Falagard/ItemListbox" LookNFeel="QShooterLook/ItemListbox" />
+    <FalagardMapping WindowType="QShooterLook/ListboxItem" TargetType="CEGUI/ItemEntry"   Renderer="Falagard/ItemEntry"   LookNFeel="QShooterLook/ListboxItem" />
+</GUIScheme>

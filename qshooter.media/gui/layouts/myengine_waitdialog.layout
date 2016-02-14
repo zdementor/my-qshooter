@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="myengine_waitdialog" >
+        <Property Name="InheritsAlpha" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="QShooterLook/FrameWindow" Name="WaitMainFrame" >
+            <Property Name="Font" Value="Cour-16" />
+            <Property Name="Text" Value="Please wait . . ." />
+            <Property Name="TitlebarFont" Value="Cour-16" />
+            <Property Name="SizingEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TitlebarEnabled" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.314375,0},{0.32625,0},{0.726875,0},{0.582918,0}}" />
+            <Property Name="MouseCursorImage" Value="set:QShooterLook image:MouseTarget" />
+            <Window Type="QShooterLook/StaticText" Name="MessageText" >
+                <Property Name="Font" Value="Cour-12" />
+                <Property Name="Text" >New scene is loading . . .
+fgdfgdfg</Property>
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.0746339,0},{0.323428,0},{0.928561,0},{0.740421,0}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

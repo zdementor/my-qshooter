@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="myengine_about" >
+        <Property Name="InheritsAlpha" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="QShooterLook/FrameWindow" Name="AboutMainFrame" >
+            <Property Name="Font" Value="Cour-16" />
+            <Property Name="Text" Value="About" />
+            <Property Name="TitlebarFont" Value="Cour-16" />
+            <Property Name="SizingEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="TitlebarEnabled" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.282152,0},{0.107839,0},{0.705588,0},{0.85262,0}}" />
+            <Property Name="MouseCursorImage" Value="set:QShooterLook image:MouseTarget" />
+            <Window Type="QShooterLook/Button" Name="AboutOKButton" >
+                <Property Name="Font" Value="Cour-16" />
+                <Property Name="Text" Value="OK" />
+                <Property Name="InheritsAlpha" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HoverTextColour" Value="FFC26408" />
+                <Property Name="UnifiedAreaRect" Value="{{0.345444,0},{0.830448,0},{0.6575,0},{0.936698,0}}" />
+                <Property Name="MouseCursorImage" Value="set:QShooterLook image:MouseArrow" />
+                <Property Name="PushedTextColour" Value="FFF5C059" />
+            </Window>
+            <Window Type="QShooterLook/StaticImage" Name="MyEngineLogo" >
+                <Property Name="Text" Value=" " />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.0874842,0},{0.109331,0},{0.9067,0},{0.395947,0}}" />
+            </Window>
+            <Window Type="QShooterLook/StaticText" Name="AboutInfo" >
+                <Property Name="Font" Value="Cour-10" />
+                <Property Name="Text" Value="j" />
+                <Property Name="InheritsAlpha" Value="False" />
+                <Property Name="VertScrollbar" Value="True" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.0874842,0},{0.418558,0},{0.9067,0},{0.807354,0}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>
